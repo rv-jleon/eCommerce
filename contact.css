@@ -15,6 +15,7 @@ nav {
     background-color: darkslategray;
     padding: 20px;
     border-bottom: 5px solid black;
+    z-index: 1;
 }
 
 .logo {
@@ -55,7 +56,122 @@ li:hover {
 /* nav bar end  */
 
 main {
-    padding-top: 100px;
+    background-image: url(contactIMGs/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* the entire contact container  */
+.contactContainer {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    max-width: 800px;
+    color: white;
+}
+
+/* info + form container  */
+
+.infoForm {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* contact info container  */
+.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+}
+
+.icon img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+}
+
+.text {
+    color: white;
+    margin-left: 20px;
+}
+
+.text h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #F5F5F5;
+}
+
+.text p {
+    font-weight:600;
+}
+
+/* form container  */
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background-color: white;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #4C5B61;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+}
+
+.input input, 
+.input textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.input span {
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
 }
 
 /* footer start  */
@@ -63,7 +179,7 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background-color: black;
     width: 100%;
