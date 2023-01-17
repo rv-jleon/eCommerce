@@ -56,6 +56,7 @@ li:hover {
 
 main {
     padding-top: 100px;
+    background-color: #C5C5C5;
 }
 
 h1 {
@@ -75,26 +76,46 @@ h1 {
 /* cards  */
 .about {
     text-align: center;
+    margin-top: 20px;
 }
 
 .cardContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 50px
 }
 
 .card {
     margin: 20px;
-    border: 2px solid black;
     height: 450px;
+    background-color: #4C5B61;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .cardIMG {
     width: 100%;
 }
 
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
 .cardTitle, .cardDesc {
     text-align: center;
-    padding: 20px;
+    color: white;
+}
+
+.cardTitle {
+    font-size: 2em;
+}
+
+.cardDesc {
+    font-size: 20px;
+    padding-top: 20px;
 }
 
 /* footer start  */
