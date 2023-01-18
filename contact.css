@@ -66,7 +66,7 @@ main {
 .contactContainer {
     position: relative;
     min-height: 100vh;
-    padding: 50px 100px;
+    padding: 100px 100px 100px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,6 +77,7 @@ main {
     text-align: center;
     max-width: 800px;
     color: white;
+    font-size: 30px;
 }
 
 /* info + form container  */
@@ -227,8 +228,14 @@ footer {
 
     /* container with all three contents  */
     .infoForm {
+        margin: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    /* title  */
+    .title {
+        font-size: 20px;
     }
 
     /* the company's contact info container  */
@@ -251,6 +258,10 @@ footer {
     .contactForm {
         width: 90%;
     }
+
+    .input {
+        overflow-y: hidden;
+    }
 }
 
 /* media query for screens like a tablet  */
@@ -262,6 +273,7 @@ footer {
     /* navbar start  */
     nav {
         display: inline-flex;
+        justify-content: space-between;
         align-items: center;
         overflow: hidden;
         height: 70px;
@@ -283,31 +295,19 @@ footer {
 
     /* container with all three contents  */
     .infoForm {
+        margin: 0;
         display: flex;
         flex-direction: column;
+    }
+
+    /* title  */
+    .title {
+        font-size: 20px;
     }
 
     /* the company's contact info container  */
-    .contactInfo {
-        width: 90%;
-    }
-
-    /* form container  */
-    .contactForm {
-        width: 80%;
-    }
-}
-
-/* media query for screens like a bigger tablet and a smaller laptop  */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    main {
-        padding-top: 70px;
-    }
-
-    /* container with all three contents  */
-    .infoForm {
-        display: flex;
-        flex-direction: column;
+    .contactContainer {
+        padding: 20px 0;
     }
 
     .contactInfo {
@@ -319,5 +319,78 @@ footer {
     .info {
         display: flex;
         justify-content: center;
+    }
+
+    /* form container  */
+    .contactForm {
+        width: 90%;
+    }
+
+    .input {
+        overflow-y: hidden;
+    }
+}
+
+/* media query for screens like a bigger tablet and a smaller laptop  */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* navbar start  */
+    nav {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        height: 70px;
+    }
+
+    .navA {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    li {
+        margin-right: 0px;
+    }
+    /* navbar end  */
+
+    main {
+        padding-top: 70px;
+    }
+
+    /* container with all three contents  */
+    .infoForm {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* title  */
+    .title {
+        font-size: 20px;
+    }
+
+    /* the company's contact info container  */
+    .contactContainer {
+        padding: 20px 0;
+    }
+
+    .contactInfo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* form container  */
+    .contactForm {
+        width: 70%;
+    }
+
+    .input {
+        overflow-y: hidden;
     }
 }
